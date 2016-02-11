@@ -1,3 +1,4 @@
+
 <?php
 
 /*** mysql hostname ***/
@@ -82,6 +83,14 @@ $results = $stmt->fetchAll();
                         <h2 id="greeting-2">
                             Buy new and used boats
                         </h2>
+                    </div>
+                </div>
+
+                <div id="cart">
+                    <div id="cart-top">
+                        <h1 id="greeting">
+                            Cart
+                        </h1>
                     </div>
                 </div>
 
