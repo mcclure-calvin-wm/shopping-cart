@@ -1,0 +1,113 @@
+body {
+    background:  url("http://archwall.xyz/wp-content/uploads/2015/10/lighthouses-run-lighthouse-gorgeous-sunset-dark-beach-sea-evening-clouds-picture-gallery.jpg");
+}
+
+#nav {
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    top: 0;
+        background-color: rgba(0, 0, 0, 0.16);
+    width: 230px;
+    height: 100%;
+}
+
+
+
+#title {
+    margin-left: 14%;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 70%;
+    font-size: large;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+    text-shadow: 0 0 20px;
+}
+
+#nav-list {
+    margin-left: 32px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+li {
+    margin: 10px;
+}
+
+#main-home {
+    position: absolute;
+    left: 280px;
+    display: inline;
+}
+
+#home-top {
+    margin-left: 130px;
+}
+
+#greeting {
+    font-size: 70px;
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+}
+
+#greeting-2 {
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    color: #ffffff;
+    margin-left: 200px;
+}
+
+#product-greeting {
+    font-size: 70px;
+    font-family: 'Vollkorn', serif;
+    font-style: italic;
+    margin-left: 400px;
+}
+
+#products {
+    position: absolute;
+    left: -1000px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.16);
+    padding-right: 360px;
+    width: 640px;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+
+}
+
+
+
+.prods {
+    height: 200px;
+    width: 300px;
+    border-radius: 20%;
+}
+
+#product-table {
+    margin-left: 70px;
+}
+
+.prods-list {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px black;
+}
