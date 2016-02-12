@@ -1,24 +1,4 @@
 
-<?php
-
-/*** mysql hostname ***/
-$hostname = '127.0.0.1';
-
-/*** mysql username ***/
-$username = 'root';
-
-/*** mysql password ***/
-$password = 'root';
-
-try {
-    $dbh = new PDO("mysql:host=$hostname;dbname=shopping-cart", $username, $password);
-} catch (PDOException $e) {
-}
-
-$stmt = $dbh->prepare("SELECT * FROM products ORDER BY id ASC");
-$stmt->execute(array('id' => $_GET['product']));
-$results = $stmt->fetchAll();
-?>
 
 <!DOCTYPE html>
     <html>
@@ -92,6 +72,16 @@ $results = $stmt->fetchAll();
                             Cart
                         </h1>
                     </div>
+                    <div id="cart-table-wrapper">
+                        <table id="cart-table" class="CSSTableGenerator">
+                            <tr>
+                                <th>.</th> <!-- number of items, auto incriment -->
+                                <th>Product Name</th>
+                                <th>.</th> <!-- img Thumbnail -->
+                                <th>Price</th>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
 
                 <div id="products">
@@ -101,19 +91,6 @@ $results = $stmt->fetchAll();
                     <div id="product-table-div">
                         <table id="product-table">
                             <tr>
-                                <?php
-
-                                if (count($results) > 0) {
-                                    foreach ($results as $product) {
-
-                                        $productname = $product['name'];
-                                        $productprice = $product['price'];
-                                        $productimg = $product['pic-file'];
-
-                                        echo "<td><img src=".'$productimg'."/> <h4 class='prods-list'>$productname</h4> <p class='prods-list'>$productprice</p></td>";
-                                    }
-                                }
-                                ?>
                                 <td>
                                     <img src="http://www.douglasbrooksboatbuilding.com/images/Peterborough1.jpg" id="prod-1" class="prods">
                                     <h4 class="prods-list">Rowboat 1</h4>
